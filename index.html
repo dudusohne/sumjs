@@ -1,10 +1,10 @@
-<script>
+<!-- <script>
     // OBJETOS CONDICIONAIS - EXEMPLOS *
 
-    nome = "duduzera";
-    apelido = "joel";
-    idade = 29;
-    javascriptdev = true;
+    nome = "duduzera"; //string
+    apelido = "joel"; //string
+    idade = 29; //int
+    javascriptdev = true; //boolean
 
     let guy = {
         nome,
@@ -40,6 +40,34 @@
     function subtrai10(a) {
         return a - 10;
     }
-    let resultSubtrai = subtrai10(8);
-    console.log(resultSubtrai);
-</script>
+    let resultSubtrai = subtrai10(8); 
+    console.log(resultSubtrai); 
+
+    //array function
+
+    //leitura de dados
+
+</script> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="form1">
+        <form action="#" method="POST" class="form">
+            <input id="nome" type="text" placeholder="Digite seu nome" /> 
+            <input id="email" type="email" placeholder="Email" /> 
+            <input id="tel" type="tel" placeholder="Phone" onChange="funcao(nome.value, email.value, tel.value)" value="(62)90000-0000" /> 
+        </form>
+    </div>
+    <script>
+        function funcao(nome, email, telefone) {
+            alert("nome: " + nome +" email: "+ email +" telefone: "+ telefone);
+        }
+    </script>
+</body>
+</html>
